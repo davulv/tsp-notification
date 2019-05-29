@@ -1,0 +1,16 @@
+active:
+    environment: unittest
+
+logging:
+    level:
+        request.trace: INFO
+    path: target/logs
+    
+spring:
+    profiles:
+        active: test, local
+        
+request:
+  logging:
+    secure:
+      enabled: false

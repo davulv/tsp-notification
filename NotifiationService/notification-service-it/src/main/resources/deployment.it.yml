@@ -1,0 +1,48 @@
+logging:
+    level:
+        request.trace: INFO
+    path: target/logs
+server:
+    servlet:
+        contextPath: /api
+    tomcat:
+        basedir: target/tomcat
+
+
+request:
+  logging:
+    secure:
+      enabled: false
+      
+swagger:
+  api:
+    title: notification-service
+    contact.info: Team
+    licence.url: #
+    description:
+    groupName: com.dell.tsp.notification
+    version: 1.0
+    path:
+      regex: /v.*/.*
+  terms.of.service.url: #
+  enabled: true
+  
+security:
+  enable-csrf: false
+  
+
+spring:
+  profiles:
+    active: local
+  rabbitmq:
+    uri: amqp://guest:guest@10.118.169.49:5672
+    queue.name: "TSP.EmailNotification.Payload.Queue"
+  data: 
+    mongodb:
+      host: 10.118.169.49
+      port: 27018
+      database: notification
+            
+SendGrid_API_KEY: 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
+              
+    

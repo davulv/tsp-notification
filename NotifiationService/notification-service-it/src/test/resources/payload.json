@@ -1,0 +1,10 @@
+{
+        "subscriberId": 23,
+        "to": "mohini.yadav@emc.com",
+        "from": "tsp@notification.com",
+        "cc": "",
+        "bcc": "",
+        "body": "Hi... your recharge for Rs. 50 is successful.",
+        "subject": "test",
+        "timeStamp": "2019-04-22"
+}
