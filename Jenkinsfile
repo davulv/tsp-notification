@@ -40,6 +40,9 @@ node {
               sh 'sshpass -p $PASSWORD scp /var/lib/jenkins/workspace/notification-gsap/notification-service/docker.sh root@10.118.169.49:/root/Notification-service/'
               sh "sshpass -p $PASSWORD ssh root@10.118.169.49 'chmod a+x /root/Notification-service/docker.sh; /root/Notification-service/docker.sh'"
           }
+           
+           
+       }
             
         
             
