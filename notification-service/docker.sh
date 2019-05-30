@@ -3,4 +3,5 @@ port=7777
 docker stop notification-service
 docker rm notification-service
 docker rmi notification-service
-docker run -i -d -p 7777:7777 --expose 7777 --name notification-service -t demo/notification-service
+docker image build -t notification-service ~/Notification-service/.
+docker run -d -p 7778:7777 --name notification-service notification-service
